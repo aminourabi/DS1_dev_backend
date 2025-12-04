@@ -13,6 +13,7 @@ connectDB(); // n3ayyet lel fonction bch tconnecti m3a MongoDB
 //les app.use
 app.use("/api/auth", require("./src/routes/authRoutes")); // route mta3 authentification
 app.use("/api/users", require("./src/routes/userRoutes")); // route mta3 utilisateurs
+app.use("/api/projects", require("./src/routes/projectRoutes"));// route mta3 projet
 
 const PORT = process.env.PORT; // na5ou l port mel .env
 app.listen(PORT, () => console.log(`Server running on port ${PORT}`)); // n7el serveur w naffichi msg fil console
